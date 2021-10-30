@@ -1,1 +1,7 @@
+@import "./Components/button.css";
+@import "./Components/player.css";
 
+body {
+  background-color: #26b4bc;
+  font-family: Arial, Helvetica, sans-serif;
+}

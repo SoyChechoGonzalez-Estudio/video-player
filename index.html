@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
 
+  <body>
+    <section class="wrapper">
+      <article class="player">
+        <div class="player-overlay">
+          <h2 class="player-title">Jakobo - Kokoriko</h2>
+          <article class="player-actions">
+            <button
+              class="button"
+              id="backward"
+              aria-label="Adelante 10 segundos"
+              title="Adelante 10 segundos"
+            ></button>
+
+            <button
+              class="button"
+              id="play"
+              aria-label="Reproducir"
+              title="Reproducir"
+            ></button>
+
+            <button
+              class="button"
+              hidden
+              id="pause"
+              aria-label="Pausar"
+              title="Pausar"
+            ></button>
+
+            <button
+              class="button"
+              id="forward"
+              aria-label="Atrás 10 segundos"
+              title="Atrás 10 segundos"
+            ></button>
+          </article>
+          <article class="player-progress">
+            <input id="progress" type="range" min="0" value="0" step="1" />
+          </article>
+        </div>
+
+        <video
+          id="video"
+          poster="./assets/images/jakobo.png"
+          muted
+          src="./assets/video/video.mp4"
+          width="400"
+        ></video>
+      </article>
+    </section>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
